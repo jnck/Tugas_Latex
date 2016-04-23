@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{book}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[bahasa]{babel}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[left=1.00cm, right=1.00cm, bottom=1.00cm,top=1.00cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[bahasa]{babel}
+\usepackage{graphicx}
+\usepackage[brown]{xcolor}
+\usepackage{color}
+\usepackage[colorlinks]{hyperref}
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+\hypersetup{%
+  colorlinks = true,
+  linkcolor  = black
+}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\pagestyle{plain}
+\begin{document}
+\input{cover.tex}
+\let\cleardoublepage\clearpage
+\tableofcontents
+\chapter{Pengenalan Cloud Computing}
+\input{bab1.tex}
+\let\cleardoublepage\clearpage
+\chapter{Pengembangan Element Cloud Computing}
+\input{bab2.tex}
+\let\cleardoublepage\clearpage
+\chapter{Jenis Layanan Cloud Computing}
+\input{bab3.tex}
+\let\cleardoublepage\clearpage
+\chapter{Penerapan Cloud Computing}
+\input{bab4.tex}
+\let\cleardoublepage\clearpage
+\input{daftarpustaka.tex}
+\let\cleardoublepage\clearpage
+\end{document}
